@@ -51,11 +51,11 @@ npm run lint
 npm run format
 ```
 
----
+## <!--
 
 ## 📂 Project Structure
 
-```
+````
 lobox-interview-task/
 ├── public/              # Static assets
 ├── src/                 # App source (components, hooks, utils)
@@ -67,13 +67,13 @@ lobox-interview-task/
 ├── eslint.config.js     # ESLint config
 ├── vite.config.ts       # Vite config
 └── README.md
-```
+``` -->
 
 ---
 
 ## 🧹 Linting & Type Safety
 
-The project is configured for **type-aware linting**.  
+The project is configured for **type-aware linting**.
 To enable stricter or stylistic TypeScript rules, adjust `eslint.config.js`:
 
 - `...tseslint.configs.recommendedTypeChecked`
@@ -98,5 +98,6 @@ Optional React-specific linting:
 
 ## 📜 License
 
-This project is provided for interview purposes.  
+This project is provided for interview purposes.
 Add a license (e.g., MIT) if you plan to reuse it publicly.
+````

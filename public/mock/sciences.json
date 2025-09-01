@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "label": "Biology 🔬"
+  },
+  {
+    "id": 2,
+    "label": "Chemistry 🧪"
+  },
+  {
+    "id": 3,
+    "label": "Astronomy 🌌"
+  },
+  {
+    "id": 4,
+    "label": "Physics ⚛️"
+  },
+  {
+    "id": 5,
+    "label": "Neuroscience 🧠"
+  },
+  {
+    "id": 6,
+    "label": "Earth Science 🌍"
+  },
+  {
+    "id": 7,
+    "label": "Genetics 🧬"
+  },
+  {
+    "id": 8,
+    "label": "Computer Science 💻"
+  },
+  {
+    "id": 9,
+    "label": "Paleontology 🦖"
+  },
+  {
+    "id": 10,
+    "label": "Geography 🧭"
+  }
+]
