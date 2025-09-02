@@ -71,17 +71,32 @@ npm run format
 ## 📂 Project Structure
 
 ````
+## 📂 Project Structure
+
+```
 lobox-interview-task/
-├── public/              # Static assets
-├── src/                 # App source (components, hooks, utils)
-│   ├── main.tsx         # App entry
-│   ├── App.tsx          # Root component
-│   └── assets/          # Local images, styles
+├── node_modules/
+├── public/
+├── src/
+│   ├── components/
+│   ├── models/
+│   ├── modules/
+│   ├── pages/
+│   ├── service/
+│   ├── styles/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── .gitignore
+├── eslint.config.js
 ├── index.html
-├── tsconfig.json        # TypeScript config
-├── eslint.config.js     # ESLint config
-├── vite.config.ts       # Vite config
-└── README.md
+├── package-lock.json
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ``` -->
 
 ---
