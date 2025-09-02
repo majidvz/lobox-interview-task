@@ -1,5 +1,20 @@
 # Lobox Interview Task – React + TypeScript + Vite
 
+## 📋 Assignment Definition
+
+Implement a multi drop-down select component with the ability to add new items by typing it in an input and pressing Enter. It should be closed by clicking outside of it.
+
+### Requirements
+
+- Use ReactJS
+- Make the code reusable
+- Use TypeScript
+- Use SCSS, and try to implement it similarly to the image as much as possible
+
+> **Design reference:** [Figma / Image](https://drive.google.com/file/d/1zmB8q-v94pc4D-qCCUr4XnIR6COJ43Vz/view?usp=drive_link)
+
+> **Note:** Do not use ChatGPT or pre-made code from Gitlab, as per the provided documentation.
+
 A minimal, fast, and type-safe React setup powered by **Vite**.  
 Built for the **Lobox interview task** to showcase project structure, clean code, and TypeScript best practices.
 
