@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const OnboardingWrapper = styled.div`
   display: flex;
-  height: 100dvh;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;

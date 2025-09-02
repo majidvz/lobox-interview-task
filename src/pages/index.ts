@@ -1,2 +1,2 @@
 export * from "./OnboardingPage";
-export * from "./SciencesFormPage";
+export * from "./TaskPage";

@@ -1,10 +1,10 @@
 import { useEffect, useRef, type FC } from "react";
 import { IconArrowRight } from "@tabler/icons-react";
 import gsap from "gsap";
-import { UIButton } from "../../components/UI";
-import { OnboardingWrapper } from "./styles";
 import { Link } from "react-router";
+import { UIButton } from "../../components/UI";
 import { ROUTES } from "../../routes/routes";
+import { OnboardingWrapper } from "./styles";
 
 export const Onboarding: FC = () => {
   const titleRef = useRef<HTMLSpanElement | null>(null);
@@ -98,13 +98,10 @@ export const Onboarding: FC = () => {
         height={120}
       />
       <div className="onboarding-texts-wrapper">
-        <span className="onboarding-title montserrat-bold" ref={titleRef}>
+        <span className="onboarding-title roboto-bold" ref={titleRef}>
           👋 Welcome
         </span>
-        <span
-          className="onboarding-subtitle montserrat-medium"
-          ref={subtitleRef}
-        >
+        <span className="onboarding-subtitle roboto-medium" ref={subtitleRef}>
           You’re reviewing Majid’s task.
         </span>
       </div>
@@ -119,8 +116,8 @@ export const Onboarding: FC = () => {
           />
         }
       >
-        <Link to={ROUTES.SCIENCES_FORM}>
-          <span className="ui-button-label montserrat-medium"> Let's go! </span>
+        <Link to={ROUTES.TASK}>
+          <span className="ui-button-label roboto-medium"> Let's go! </span>
         </Link>
       </UIButton>
     </OnboardingWrapper>

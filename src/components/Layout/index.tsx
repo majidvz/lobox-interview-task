@@ -1,6 +1,6 @@
 import type { FC } from "react";
-import { LayoutWrapper } from "./styles";
 import { Outlet } from "react-router";
+import { LayoutWrapper } from "./styles";
 
 export const Layout: FC = () => {
   return (

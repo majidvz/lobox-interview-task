@@ -7,5 +7,6 @@ export const LayoutWrapper = styled.main`
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  background-color: #f9f9f9;
 `;

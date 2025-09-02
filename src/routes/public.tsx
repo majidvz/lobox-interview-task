@@ -1,5 +1,5 @@
 import { Navigate, type RouteObject } from "react-router";
-import { OnboardingPage, SciencesFormPage } from "../pages";
+import { OnboardingPage, TaskPage } from "../pages";
 import { Layout } from "../components";
 import { ROUTES } from "./routes";
 
@@ -14,7 +14,7 @@ export const PublicRoutes: RouteObject[] = [
         path: ROUTES.ONBOARDING,
         element: <OnboardingPage />,
       },
-      { path: ROUTES.SCIENCES_FORM, element: <SciencesFormPage /> },
+      { path: ROUTES.TASK, element: <TaskPage /> },
     ],
   },
 ];

@@ -12,6 +12,7 @@ export const UIButtonWrapper = styled.button`
   padding: 0 24px;
   border-radius: 12px;
   transition: all 0.3s ease;
+  text-decoration: none !important;
 
   .ui-button-icon-after {
     transition: all 0.3s ease;
@@ -19,7 +20,6 @@ export const UIButtonWrapper = styled.button`
 
   .ui-button-label {
     color: #fff;
-    text-decoration: none;
     font-size: 16px;
     line-height: 24px;
   }
