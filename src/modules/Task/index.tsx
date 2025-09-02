@@ -3,7 +3,6 @@ import { useTaskContext } from "./context";
 
 export const Task = () => {
   const { value, dispatch } = useTaskContext();
-  console.log([...value.fields]);
 
   const onSaveHandler = (newLabel: string) => {
     const newFieldsList = [
