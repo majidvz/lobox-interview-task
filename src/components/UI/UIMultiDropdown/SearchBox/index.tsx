@@ -6,18 +6,24 @@ interface IUIMultiDropdownSearchBoxProps {
   isActive: boolean;
   value: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  onKeyDown?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
 }
 
 export const UIMultiDropdownSearchBox: FC<IUIMultiDropdownSearchBoxProps> = ({
   isActive,
   value,
   onChange,
+  onKeyDown,
 }) => {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
-    if (isActive && inputRef.current) {
-      inputRef.current.focus();
+    if (inputRef.current) {
+      if (isActive) {
+        inputRef.current.focus();
+      } else {
+        inputRef.current.blur();
+      }
     }
   }, [isActive, inputRef]);
 
@@ -29,6 +35,7 @@ export const UIMultiDropdownSearchBox: FC<IUIMultiDropdownSearchBoxProps> = ({
         placeholder="Search..."
         value={value}
         onChange={onChange}
+        onKeyDown={onKeyDown}
       />
       <div className="search-box-icon-wrapper">
         <IconChevronDown

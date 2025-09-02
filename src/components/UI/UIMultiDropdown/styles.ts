@@ -25,5 +25,7 @@ export const UIMultiDropdownWrapper = styled.div<UIMultiDropdownWrapperProps>`
     padding: 0;
     padding: 8px 12px;
     box-sizing: border-box;
+    max-height: 186px;
+    overflow: auto;
   }
 `;

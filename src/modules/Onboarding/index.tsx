@@ -1,7 +1,7 @@
 import { useEffect, useRef, type FC } from "react";
 import { IconArrowRight } from "@tabler/icons-react";
 import gsap from "gsap";
-import { Link } from "react-router";
+import { useNavigate } from "react-router";
 import { UIButton } from "../../components/UI";
 import { ROUTES } from "../../routes/routes";
 import { OnboardingWrapper } from "./styles";
@@ -11,6 +11,12 @@ export const Onboarding: FC = () => {
   const subtitleRef = useRef<HTMLSpanElement | null>(null);
   const avatarRef = useRef<HTMLImageElement | null>(null);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+  const navigate = useNavigate();
+
+  const navigateToTask = () => {
+    navigate(ROUTES.TASK);
+  };
 
   useEffect(() => {
     if (avatarRef.current) {
@@ -107,6 +113,8 @@ export const Onboarding: FC = () => {
       </div>
 
       <UIButton
+        onClick={navigateToTask}
+        color="primary"
         ref={buttonRef}
         iconAfter={
           <IconArrowRight
@@ -116,9 +124,7 @@ export const Onboarding: FC = () => {
           />
         }
       >
-        <Link to={ROUTES.TASK}>
-          <span className="ui-button-label roboto-medium"> Let's go! </span>
-        </Link>
+        <span className="ui-button-label roboto-medium"> Let's go! </span>
       </UIButton>
     </OnboardingWrapper>
   );

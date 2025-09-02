@@ -1,13 +1,23 @@
 import styled from "styled-components";
+import { IButtonColor } from "./types";
 
-export const UIButtonWrapper = styled.button`
+interface UIButtonWrapperProps {
+  $color: IButtonColor;
+}
+
+export const UIButtonWrapper = styled.button<UIButtonWrapperProps>`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   border: none;
   cursor: pointer;
-  background-color: #5084ed;
+  background-color: ${(props) =>
+    props.$color === "primary"
+      ? "#5084ed"
+      : props.$color === "secondary"
+      ? "#fff"
+      : ""};
   height: 48px;
   padding: 0 24px;
   border-radius: 12px;
@@ -28,6 +38,7 @@ export const UIButtonWrapper = styled.button`
     transform: scale(1.2);
 
     .ui-button-icon-after {
+      opacity: 0;
       transform: translateX(40px);
     }
   }

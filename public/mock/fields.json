@@ -5,7 +5,7 @@
   },
   {
     "id": 2,
-    "label": "Yeeeah, science! 🔬"
+    "label": "Educational Science 🔬"
   },
   {
     "id": 3,
@@ -13,14 +13,30 @@
   },
   {
     "id": 4,
-    "label": "Sport ⚽"
+    "label": "Artificial Intelligence 🤖"
   },
   {
     "id": 5,
-    "label": "Games 🎮"
+    "label": "Sports ⚽"
   },
   {
     "id": 6,
+    "label": "eSports 🎮"
+  },
+  {
+    "id": 7,
+    "label": "Gaming 🎲"
+  },
+  {
+    "id": 8,
     "label": "Health 🏥"
+  },
+  {
+    "id": 9,
+    "label": "Healthy Lifestyle 🍎"
+  },
+  {
+    "id": 10,
+    "label": "Healthcare 💊"
   }
 ]

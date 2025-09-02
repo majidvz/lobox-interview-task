@@ -12,6 +12,7 @@ export const TaskProvider: FC<PropsWithChildren> = ({ children }) => {
       const response = await getFields();
 
       if (response && response.data) {
+        localStorage.setItem("fields", JSON.stringify(response.data));
         setFields(response.data);
       }
     } catch (error) {
@@ -20,7 +21,10 @@ export const TaskProvider: FC<PropsWithChildren> = ({ children }) => {
   };
 
   useEffect(() => {
-    getFields();
+    const storedFields = localStorage.getItem("fields");
+    if (storedFields) {
+      setFields(JSON.parse(storedFields));
+    } else getFields();
   }, []);
 
   const contextValue = {
